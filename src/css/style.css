@@ -64,10 +64,14 @@ html, body {
   .main .tree-block__category {
     display: flex; }
     .main .tree-block__category__left__arrow {
-      width: 30px;
-      background-color: #fff;
+      height: 100%;
       display: flex;
+      align-items: stretch;
       justify-content: center; }
+      .main .tree-block__category__left__arrow > div {
+        width: 40px;
+        background-color: rgba(53, 0, 106, 0.8);
+        display: flex; }
     .main .tree-block__category__right {
       display: flex; }
       .main .tree-block__category__right__wrapper {
@@ -80,7 +84,8 @@ html, body {
           display: flex;
           align-items: center;
           justify-content: center;
-          position: relative; }
+          position: relative;
+          cursor: pointer; }
           .main .tree-block__category__right__wrapper__top-icon > i {
             font-size: 2.5rem; }
         .main .tree-block__category__right__wrapper__top-icon::after, .main .tree-block__category__right__wrapper__top-icon::before {
