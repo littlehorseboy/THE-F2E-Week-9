@@ -61,6 +61,47 @@ html, body {
   @media (max-width: 900px) {
     .main .tree-block {
       width: 50%; } }
+  .main .tree-block__category {
+    display: flex; }
+    .main .tree-block__category__left__arrow {
+      width: 30px;
+      background-color: #fff;
+      display: flex;
+      justify-content: center; }
+    .main .tree-block__category__right {
+      display: flex; }
+      .main .tree-block__category__right__wrapper {
+        padding-left: 0.2rem;
+        padding-right: 0.2rem; }
+        .main .tree-block__category__right__wrapper__top-icon {
+          width: 60px;
+          height: 60px;
+          background-color: rgba(255, 255, 255, 0.1);
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          position: relative; }
+          .main .tree-block__category__right__wrapper__top-icon > i {
+            font-size: 2.5rem; }
+        .main .tree-block__category__right__wrapper__top-icon::after, .main .tree-block__category__right__wrapper__top-icon::before {
+          content: '';
+          position: absolute;
+          top: 0;
+          right: 0;
+          border-color: transparent;
+          border-style: solid; }
+        .main .tree-block__category__right__wrapper__top-icon::after {
+          border-width: 9px;
+          border-right-color: #6900D1;
+          border-top-color: #6900D1; }
+        .main .tree-block__category__right__wrapper__bottom-icon > div {
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          margin-top: 0.2rem; }
+          .main .tree-block__category__right__wrapper__bottom-icon > div > i {
+            font-size: 20px;
+            margin-right: 0.2rem; }
   @media (max-width: 900px) {
     .main .tree-block-content {
       width: 50%; } }
