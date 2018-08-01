@@ -64,16 +64,17 @@ html, body {
   .main .tree-block__category {
     display: flex; }
     .main .tree-block__category__left__arrow {
-      height: 100%;
       display: flex;
       align-items: stretch;
-      justify-content: center; }
+      justify-content: center;
+      min-height: 12px; }
       .main .tree-block__category__left__arrow > div {
         width: 40px;
         background-color: rgba(53, 0, 106, 0.8);
         display: flex; }
     .main .tree-block__category__right {
-      display: flex; }
+      display: flex;
+      flex-wrap: wrap; }
       .main .tree-block__category__right__wrapper {
         padding-left: 0.2rem;
         padding-right: 0.2rem; }
