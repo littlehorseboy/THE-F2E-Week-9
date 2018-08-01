@@ -63,15 +63,18 @@ html, body {
       width: 50%; } }
   .main .tree-block__category {
     display: flex; }
-    .main .tree-block__category__left__arrow {
+    .main .tree-block__category__left {
       display: flex;
-      align-items: stretch;
-      justify-content: center;
-      min-height: 12px; }
-      .main .tree-block__category__left__arrow > div {
-        width: 40px;
-        background-color: rgba(53, 0, 106, 0.8);
-        display: flex; }
+      flex-direction: column; }
+      .main .tree-block__category__left__arrow {
+        display: flex;
+        align-items: stretch;
+        justify-content: center;
+        height: 100%; }
+        .main .tree-block__category__left__arrow > div {
+          width: 40px;
+          background-color: rgba(53, 0, 106, 0.8);
+          display: flex; }
     .main .tree-block__category__right {
       display: flex;
       flex-wrap: wrap; }

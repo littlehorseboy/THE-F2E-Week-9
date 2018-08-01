@@ -87,11 +87,13 @@ html, body {
     &__category {
       display: flex;
       &__left {
+        display: flex;
+        flex-direction: column;
         &__arrow {
           display: flex;
           align-items: stretch;
           justify-content: center;
-          min-height: 12px;
+          height: 100%;
           >div {
             width: 40px;
             background-color: rgba(53, 0, 106, 0.8);
