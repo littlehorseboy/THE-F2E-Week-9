@@ -166,9 +166,38 @@ html, body {
     }
   }
 
-  .tree-block-content {
+  .tree-content {
     @media (max-width: 900px) {
       width: 50%;
+    }
+
+    &__container {
+      border: 3px solid $importanat;
+      &__top {
+        min-height: 306px;
+        background-color: #8000FF;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+        >div {
+          >i {
+            font-size: 12rem;
+          }
+          >h3 {
+            font-size: 2.5rem;
+            margin-top: 0.5rem;
+            margin-bottom: 0.5rem;
+          }
+        }
+      }
+      &__bottom {
+        background-color: #6900D1;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        text-align: center;
+      }
     }
   }
 }

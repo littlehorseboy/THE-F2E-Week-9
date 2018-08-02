@@ -126,5 +126,26 @@ html, body {
             font-size: 16px;
             margin-right: 0.2rem; }
   @media (max-width: 900px) {
-    .main .tree-block-content {
+    .main .tree-content {
       width: 50%; } }
+  .main .tree-content__container {
+    border: 3px solid #FF0093; }
+    .main .tree-content__container__top {
+      min-height: 306px;
+      background-color: #8000FF;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
+      .main .tree-content__container__top > div > i {
+        font-size: 12rem; }
+      .main .tree-content__container__top > div > h3 {
+        font-size: 2.5rem;
+        margin-top: 0.5rem;
+        margin-bottom: 0.5rem; }
+    .main .tree-content__container__bottom {
+      background-color: #6900D1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      text-align: center; }
