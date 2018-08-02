@@ -1,4 +1,5 @@
 $importanat: #FF0093;
+$secondary: #6900D1;
 
 html, body {
   width: 100%;
@@ -38,6 +39,10 @@ html, body {
     @media (max-width: 900px) {
       width: 100%;
       text-align: center;
+    }
+
+    >div {
+      padding-right: 1rem;
     }
 
     &__title {
@@ -118,6 +123,7 @@ html, body {
         display: flex;
         flex-wrap: wrap;
         padding-bottom: 1rem;
+        padding-left: 0.5rem;
         &__wrapper {
           padding-left: 0.2rem;
           padding-right: 0.2rem;
@@ -145,8 +151,8 @@ html, body {
           }
           &__top-icon::after {
             border-width: 9px;
-            border-right-color: #6900D1;
-            border-top-color: #6900D1;
+            border-right-color: $secondary;
+            border-top-color: $secondary;
           }
           
           &__bottom-icon {
@@ -192,11 +198,36 @@ html, body {
         }
       }
       &__bottom {
-        background-color: #6900D1;
+        background-color: $secondary;
         display: flex;
         align-items: center;
         justify-content: center;
         text-align: center;
+        >div {
+          >i {
+            font-size: 3rem;
+            padding-top: 1rem;
+          }
+          >.tree-content__container__bottom__sub-title {
+            font-size: 16px;
+            line-height: 36px;
+            font-weight: 700;
+          }
+          >.tree-content__container__bottom__btn {
+            font-size: 16px;
+            line-height: 36px;
+            font-weight: 700;
+            padding-left: 4rem;
+            padding-right: 4rem;
+            margin-bottom: 0.5rem;
+            border: 2px solid #fff;
+            cursor: pointer;
+            &:hover {
+              background-color: $importanat;
+              border-color: $importanat;
+            }
+          }
+        }
       }
     }
   }
